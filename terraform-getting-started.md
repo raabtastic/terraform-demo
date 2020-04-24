@@ -110,9 +110,9 @@ Take note of the providers installed to ensure they match your expected configur
 
 If the output does not say Terraform has been successfully initialized, you will need to troubleshoot any error messages given. 
 
-## Provision the resource
+## Create infrastructure
 
-Once Terraform is successfully initialized, you can provision the resource with the `apply` command.
+Once Terraform is successfully initialized, use the `apply` command to create infrastructure.
 
 ```shell
 $ terraform apply
@@ -206,7 +206,7 @@ docker_container.nginx: Creation complete after 1s [id=d2d80515cb6853814db35f033
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
 
-If you received the error ```"Cannot connect to the Docker daemon at unix:///var/run/docker.sock" ```  then you will need to troubleshoot your Docker setup. On some systems you may need to change the `host` parameter in your configuration file to `localhost`.
+If you received the error ```"Cannot connect to the Docker daemon at unix:///var/run/docker.sock"```  then you will need to troubleshoot your Docker setup. On some systems you may need to change the `host` parameter in your configuration file to `localhost`.
 
 ```shell
 host = "tcp://localhost:2375"
